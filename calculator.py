@@ -3,5 +3,10 @@ def calc(a, b):
   diff = a - b
   multiple = a * b
   quotient = a / b
-  num_list = [calc_sum, diff, multiple, quotient]
-  sum_list = sum(num_list)
+  nums = {
+    "sum": calc_sum,
+    "diff": diff,
+    "multiple": multiple,
+    "quotient": quotient
+  }
+  return nums
